@@ -1,0 +1,128 @@
+/* Welcome section */
+.welcome {
+  background-color: var(--bg-primary);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Courses section */
+.courses .container.grid {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses h2 {
+  padding-top: var(--spacing-large);
+}
+
+.courses .container.grid .main-paragraph {
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+}
+
+.courses h2,
+.courses .main-paragraph {
+  text-align: center;
+}
+
+.courses h2,
+.courses .main-paragraph,
+.courses .courses-container {
+  margin-bottom: var(--spacing-large);
+}
+
+.courses .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.courses .course-wrapper {
+  width: calc(100% / 3);
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
+
+.courses .course {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses .course-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.courses .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.courses h3 {
+  color: var(--text-primary);
+}
+
+.courses span,
+.courses .certification {
+  font-size: var(--fs-medium);
+  color: #666666;
+}
+
+.courses .material-icons {
+  vertical-align: middle;
+}
+
+.courses .microsoft-logo,
+.courses .time,
+.courses .duration {
+  margin-left: var(--spacing-small);
+}
+
+.courses h3,
+.courses .certification,
+.courses .badges,
+.courses a {
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses .content {
+  padding: 0 var(--spacing-small);
+}
+
+.courses a {
+  color: var(--text-white);
+  background-color: var(--button-color);
+  font-size: var(--fs-medium);
+  text-align: center;
+  padding: var(--spacing-tiny);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  width: 100px;
+}
+
+@media (max-width: 992px) {
+  .courses .course-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses .course-wrapper {
+    width: 100%;
+  }
+}
